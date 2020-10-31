@@ -60,15 +60,6 @@ const suspectsArray = [
     color: "yellow",
   },
 ];
-// Suspects Collection
-const suspectsArray = [
- { name :"mrGreen"},
- { name :"drOrchid"},
- { name :"profPlum"},
- { name :"missScarlet"},
- { name :"mrsPeacock"},
- { name :"mrMustard"}
-];
 
 // Rooms Collection
 const roomsArray = [
@@ -103,5 +94,15 @@ const weaponsArray = [
 ];
 
 // ITERATION 2
+/* function selectRandom(anyArray) {
+  let random = Math.random();
+  let number = random * anyArray.length;
+  let flornumber = Math.floor(number);
+  return anyArray[flornumber];
+} */
 
+
+function selectRandom(anyArray) {
+  return anyArray[Math.floor(Math.random() * anyArray.length)];
+}
 // ITERATION 3
